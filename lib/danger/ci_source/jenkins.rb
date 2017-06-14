@@ -104,6 +104,8 @@ module Danger
         else
           change_url
         end
+      elsif env["ghprbAuthorRepoGitUrl"]
+        env["ghprbAuthorRepoGitUrl"]
       else
         env["GIT_URL"]
       end
